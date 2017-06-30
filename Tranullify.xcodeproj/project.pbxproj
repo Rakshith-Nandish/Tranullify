@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F41A007D721FA7A802677BD /* Pods_Tranullify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21E4CD939D43CFC47E49EB68 /* Pods_Tranullify.framework */; };
+		F1E59FEA1F03933B005B47D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E59FE91F03933B005B47D7 /* AppDelegate.swift */; };
+		F1E59FEC1F03933B005B47D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E59FEB1F03933B005B47D7 /* ViewController.swift */; };
+		F1E59FEF1F03933B005B47D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E59FED1F03933B005B47D7 /* Main.storyboard */; };
+		F1E59FF11F03933B005B47D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E59FF01F03933B005B47D7 /* Assets.xcassets */; };
+		F1E59FF41F03933B005B47D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E59FF21F03933B005B47D7 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		21E4CD939D43CFC47E49EB68 /* Pods_Tranullify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tranullify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F6EF6141F10D484EAF1A341 /* Pods-Tranullify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tranullify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tranullify/Pods-Tranullify.debug.xcconfig"; sourceTree = "<group>"; };
+		87FF7BCDBE0CFE89BA4FC607 /* Pods-Tranullify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tranullify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tranullify/Pods-Tranullify.release.xcconfig"; sourceTree = "<group>"; };
+		F1E59FE61F03933B005B47D7 /* Tranullify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tranullify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1E59FE91F03933B005B47D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F1E59FEB1F03933B005B47D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1E59FEE1F03933B005B47D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1E59FF01F03933B005B47D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1E59FF31F03933B005B47D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1E59FF51F03933B005B47D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1E59FE31F03933B005B47D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F41A007D721FA7A802677BD /* Pods_Tranullify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F7A454F653AC5E444A54243 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21E4CD939D43CFC47E49EB68 /* Pods_Tranullify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1E59FDD1F03933B005B47D7 = {
+			isa = PBXGroup;
+			children = (
+				F1E59FE81F03933B005B47D7 /* Tranullify */,
+				F1E59FE71F03933B005B47D7 /* Products */,
+				F8145DDA2CD637B68CAF7407 /* Pods */,
+				7F7A454F653AC5E444A54243 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F1E59FE71F03933B005B47D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1E59FE61F03933B005B47D7 /* Tranullify.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1E59FE81F03933B005B47D7 /* Tranullify */ = {
+			isa = PBXGroup;
+			children = (
+				F1E59FE91F03933B005B47D7 /* AppDelegate.swift */,
+				F1E59FEB1F03933B005B47D7 /* ViewController.swift */,
+				F1E59FED1F03933B005B47D7 /* Main.storyboard */,
+				F1E59FF01F03933B005B47D7 /* Assets.xcassets */,
+				F1E59FF21F03933B005B47D7 /* LaunchScreen.storyboard */,
+				F1E59FF51F03933B005B47D7 /* Info.plist */,
+			);
+			path = Tranullify;
+			sourceTree = "<group>";
+		};
+		F8145DDA2CD637B68CAF7407 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F6EF6141F10D484EAF1A341 /* Pods-Tranullify.debug.xcconfig */,
+				87FF7BCDBE0CFE89BA4FC607 /* Pods-Tranullify.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1E59FE51F03933B005B47D7 /* Tranullify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1E59FF81F03933B005B47D7 /* Build configuration list for PBXNativeTarget "Tranullify" */;
+			buildPhases = (
+				AB6EB2D42EBC0BC751C2005C /* [CP] Check Pods Manifest.lock */,
+				F1E59FE21F03933B005B47D7 /* Sources */,
+				F1E59FE31F03933B005B47D7 /* Frameworks */,
+				F1E59FE41F03933B005B47D7 /* Resources */,
+				AE594F96356B51773966751B /* [CP] Embed Pods Frameworks */,
+				3D79D021F01FC63537A9A6B1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tranullify;
+			productName = Tranullify;
+			productReference = F1E59FE61F03933B005B47D7 /* Tranullify.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1E59FDE1F03933B005B47D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = webonise;
+				TargetAttributes = {
+					F1E59FE51F03933B005B47D7 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = E6379F836A;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F1E59FE11F03933B005B47D7 /* Build configuration list for PBXProject "Tranullify" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1E59FDD1F03933B005B47D7;
+			productRefGroup = F1E59FE71F03933B005B47D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1E59FE51F03933B005B47D7 /* Tranullify */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1E59FE41F03933B005B47D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1E59FF41F03933B005B47D7 /* LaunchScreen.storyboard in Resources */,
+				F1E59FF11F03933B005B47D7 /* Assets.xcassets in Resources */,
+				F1E59FEF1F03933B005B47D7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D79D021F01FC63537A9A6B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tranullify/Pods-Tranullify-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB6EB2D42EBC0BC751C2005C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AE594F96356B51773966751B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tranullify/Pods-Tranullify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1E59FE21F03933B005B47D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1E59FEC1F03933B005B47D7 /* ViewController.swift in Sources */,
+				F1E59FEA1F03933B005B47D7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F1E59FED1F03933B005B47D7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1E59FEE1F03933B005B47D7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F1E59FF21F03933B005B47D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1E59FF31F03933B005B47D7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1E59FF61F03933B005B47D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1E59FF71F03933B005B47D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1E59FF91F03933B005B47D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F6EF6141F10D484EAF1A341 /* Pods-Tranullify.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E6379F836A;
+				INFOPLIST_FILE = Tranullify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.webonise.Tranullify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F1E59FFA1F03933B005B47D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87FF7BCDBE0CFE89BA4FC607 /* Pods-Tranullify.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E6379F836A;
+				INFOPLIST_FILE = Tranullify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.webonise.Tranullify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1E59FE11F03933B005B47D7 /* Build configuration list for PBXProject "Tranullify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1E59FF61F03933B005B47D7 /* Debug */,
+				F1E59FF71F03933B005B47D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1E59FF81F03933B005B47D7 /* Build configuration list for PBXNativeTarget "Tranullify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1E59FF91F03933B005B47D7 /* Debug */,
+				F1E59FFA1F03933B005B47D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1E59FDE1F03933B005B47D7 /* Project object */;
+}
