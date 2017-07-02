@@ -140,8 +140,7 @@
 				TargetAttributes = {
 					F1E59FE51F03933B005B47D7 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = E6379F836A;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -355,8 +354,9 @@
 			baseConfigurationReference = 2F6EF6141F10D484EAF1A341 /* Pods-Tranullify.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = E6379F836A;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Tranullify/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.webonise.Tranullify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -369,8 +369,9 @@
 			baseConfigurationReference = 87FF7BCDBE0CFE89BA4FC607 /* Pods-Tranullify.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = E6379F836A;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Tranullify/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.webonise.Tranullify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
