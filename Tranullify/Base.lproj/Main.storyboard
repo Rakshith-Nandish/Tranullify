@@ -29,7 +29,7 @@
                                 <rect key="frame" x="0.0" y="572" width="375" height="95"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Road Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mj4-EX-NB9">
-                                        <rect key="frame" x="120.5" y="8" width="133.5" height="21"/>
+                                        <rect key="frame" x="120" y="8" width="134" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -50,6 +50,9 @@
                                                 <integer key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonActionHandlers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="buk-QG-a9I"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUm-5K-9H8">
                                         <rect key="frame" x="207" y="45" width="133" height="32"/>
@@ -67,6 +70,9 @@
                                                 <integer key="value" value="2"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonActionHandlers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P32-t6-lWi"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -93,6 +99,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buttonAlternateRoute" destination="VUm-5K-9H8" id="gAL-WD-etN"/>
+                        <outlet property="buttonOneWay" destination="Wgd-Kj-4k2" id="pig-Zk-3jP"/>
+                        <outlet property="labelSelectedType" destination="mj4-EX-NB9" id="xew-rd-VvN"/>
                         <outlet property="mapViewRoadAnalysis" destination="pje-Fb-ms0" id="idb-Sc-ekf"/>
                     </connections>
                 </viewController>

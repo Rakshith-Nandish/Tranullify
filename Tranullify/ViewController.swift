@@ -11,28 +11,22 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var mapViewRoadAnalysis: GMSMapView!
     
+    @IBOutlet weak var labelSelectedType: UILabel!
     var roads: [RoadInfo]!
+    
+    @IBOutlet weak var buttonOneWay: UIButton!
+    @IBOutlet weak var buttonAlternateRoute: UIButton!
+    
+    var polyLineForOneWay: GMSPolyline?
+    var polyLineForAlternateRoutes: GMSPolyline?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadMap()
         readJson()
-        for road in roads {
-            if road.name == "Outer Ring Road" {
-             drawPolyLine(road: road)     
-            }
-        }
-        
-        for road in roads {
-            if road.highway != "trunk" && road.highway != "trunk_link" && road.highway != "secondary" && road.highway != "primary_link" && road.highway != "tertiary" && road.highway != "footway" && road.name != "Outer Ring Road" {
-                drawPolyLineForAlternateRoutes(road: road)
-            }
-        }
     }
     
     func loadMap() {
-        // Create a GMSCameraPosition that tells the map to display the
-        // coordinate -33.86,151.20 at zoom level 6.
         let camera = GMSCameraPosition.camera(withLatitude: 12.9260, longitude: 77.6762, zoom: 16.0)
         mapViewRoadAnalysis.camera = camera
         
@@ -76,17 +70,40 @@ class ViewController: UIViewController {
         }
     }
     
-    func drawPolyLine(road: RoadInfo) {
+    
+    //MARK: Button actions
+    @IBAction func buttonActionHandlers(_ sender: UIButton) {
+        mapViewRoadAnalysis.clear()
+        if sender == buttonOneWay {
+            labelSelectedType.text = "Showing One-Way(s)"
+            for road in roads {
+                if road.name == "Outer Ring Road" {
+                    drawPolyLineForOneWay(road: road)
+                }
+            }
+        }else {
+            labelSelectedType.text = "Showing Alternate-route(s)"
+            for road in roads {
+                if road.highway != "trunk" && road.highway != "trunk_link" && road.highway != "secondary" && road.highway != "primary_link" && road.highway != "tertiary" && road.highway != "footway" && road.name != "Outer Ring Road" {
+                    drawPolyLineForAlternateRoutes(road: road)
+                }
+            }
+        }
+    }
+    
+    
+    
+    func drawPolyLineForOneWay(road: RoadInfo) {
         let path = GMSMutablePath()
 
         for coordinate in road.position {
             path.addLatitude(coordinate[1], longitude: coordinate[0])
         }
         
-        let polyLine = GMSPolyline(path: path)
-        polyLine.strokeColor = UIColor.red
-        polyLine.strokeWidth = 4.0
-        polyLine.map = mapViewRoadAnalysis
+        polyLineForOneWay = GMSPolyline(path: path)
+        polyLineForOneWay?.strokeColor = UIColor.red
+        polyLineForOneWay?.strokeWidth = 4.0
+        polyLineForOneWay?.map = mapViewRoadAnalysis
     }
     
     func drawPolyLineForAlternateRoutes(road: RoadInfo) {
@@ -95,10 +112,10 @@ class ViewController: UIViewController {
             path.addLatitude(coordinate[1], longitude: coordinate[0])
         }
         
-        let polyLine = GMSPolyline(path: path)
-        polyLine.strokeColor = UIColor.blue
-        polyLine.strokeWidth = 4.0
-        polyLine.map = mapViewRoadAnalysis
+        polyLineForAlternateRoutes = GMSPolyline(path: path)
+        polyLineForAlternateRoutes?.strokeColor = UIColor.blue
+        polyLineForAlternateRoutes?.strokeWidth = 4.0
+        polyLineForAlternateRoutes?.map = mapViewRoadAnalysis
     }
 }
 
