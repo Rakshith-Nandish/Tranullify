@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7F41A007D721FA7A802677BD /* Pods_Tranullify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21E4CD939D43CFC47E49EB68 /* Pods_Tranullify.framework */; };
+		ACFFDD8F1F08D03B0096F19A /* RoadInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFFDD8E1F08D03B0096F19A /* RoadInfo.swift */; };
+		ACFFDD911F08D0640096F19A /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFFDD901F08D0640096F19A /* Coordinates.swift */; };
+		ACFFDD951F08D6290096F19A /* DemoResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = ACFFDD941F08D6290096F19A /* DemoResponse.json */; };
 		F1E59FEA1F03933B005B47D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E59FE91F03933B005B47D7 /* AppDelegate.swift */; };
 		F1E59FEC1F03933B005B47D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E59FEB1F03933B005B47D7 /* ViewController.swift */; };
 		F1E59FEF1F03933B005B47D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E59FED1F03933B005B47D7 /* Main.storyboard */; };
@@ -19,6 +22,9 @@
 		21E4CD939D43CFC47E49EB68 /* Pods_Tranullify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tranullify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F6EF6141F10D484EAF1A341 /* Pods-Tranullify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tranullify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tranullify/Pods-Tranullify.debug.xcconfig"; sourceTree = "<group>"; };
 		87FF7BCDBE0CFE89BA4FC607 /* Pods-Tranullify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tranullify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tranullify/Pods-Tranullify.release.xcconfig"; sourceTree = "<group>"; };
+		ACFFDD8E1F08D03B0096F19A /* RoadInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoadInfo.swift; path = Models/RoadInfo.swift; sourceTree = "<group>"; };
+		ACFFDD901F08D0640096F19A /* Coordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Coordinates.swift; path = Models/Coordinates.swift; sourceTree = "<group>"; };
+		ACFFDD941F08D6290096F19A /* DemoResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DemoResponse.json; sourceTree = "<group>"; };
 		F1E59FE61F03933B005B47D7 /* Tranullify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tranullify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E59FE91F03933B005B47D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1E59FEB1F03933B005B47D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +54,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		ACFFDD8D1F08D0220096F19A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ACFFDD8E1F08D03B0096F19A /* RoadInfo.swift */,
+				ACFFDD901F08D0640096F19A /* Coordinates.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		F1E59FDD1F03933B005B47D7 = {
 			isa = PBXGroup;
 			children = (
@@ -69,12 +84,14 @@
 		F1E59FE81F03933B005B47D7 /* Tranullify */ = {
 			isa = PBXGroup;
 			children = (
+				ACFFDD8D1F08D0220096F19A /* Models */,
 				F1E59FE91F03933B005B47D7 /* AppDelegate.swift */,
 				F1E59FEB1F03933B005B47D7 /* ViewController.swift */,
 				F1E59FED1F03933B005B47D7 /* Main.storyboard */,
 				F1E59FF01F03933B005B47D7 /* Assets.xcassets */,
 				F1E59FF21F03933B005B47D7 /* LaunchScreen.storyboard */,
 				F1E59FF51F03933B005B47D7 /* Info.plist */,
+				ACFFDD941F08D6290096F19A /* DemoResponse.json */,
 			);
 			path = Tranullify;
 			sourceTree = "<group>";
@@ -152,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1E59FF41F03933B005B47D7 /* LaunchScreen.storyboard in Resources */,
+				ACFFDD951F08D6290096F19A /* DemoResponse.json in Resources */,
 				F1E59FF11F03933B005B47D7 /* Assets.xcassets in Resources */,
 				F1E59FEF1F03933B005B47D7 /* Main.storyboard in Resources */,
 			);
@@ -213,7 +231,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1E59FEC1F03933B005B47D7 /* ViewController.swift in Sources */,
+				ACFFDD8F1F08D03B0096F19A /* RoadInfo.swift in Sources */,
 				F1E59FEA1F03933B005B47D7 /* AppDelegate.swift in Sources */,
+				ACFFDD911F08D0640096F19A /* Coordinates.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +397,7 @@
 				F1E59FFA1F03933B005B47D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
