@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tranullify/ViewController.swift"
-            timestampString = "520695743.186339"
+            timestampString = "520696628.672547"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
             landmarkName = "drawPolyLineForOneWay(road:)"
             landmarkType = "7">
          </BreakpointContent>

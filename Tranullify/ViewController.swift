@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     }
     
     func loadMap() {
-        let camera = GMSCameraPosition.camera(withLatitude: 12.9260, longitude: 77.6762, zoom: 16.0)
+        let camera = GMSCameraPosition.camera(withLatitude: 12.9260, longitude: 77.6762, zoom: 15.5)
         mapViewRoadAnalysis.camera = camera
         
         // Creates a marker in the center of the map.
