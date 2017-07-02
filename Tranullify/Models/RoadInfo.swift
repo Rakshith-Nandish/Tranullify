@@ -8,6 +8,7 @@ class RoadInfo:Mappable {
     var highway: String = ""
     var isOneWay: Bool = false
     var position: [[Double]] = []
+    var name: String = ""
     
     required init?(map: Map) {
         
@@ -19,5 +20,6 @@ class RoadInfo:Mappable {
         highway <- map["properties.highway"]
         isOneWay <- map["properties.oneway"]
         position <- map["coordinates"]
+        name <- map["properties.name"]
     }
 }

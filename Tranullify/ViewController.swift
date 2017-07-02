@@ -11,10 +11,17 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var mapViewRoadAnalysis: GMSMapView!
     
+    var roads: [RoadInfo]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadMap()
         readJson()
+        for road in roads {
+            if road.name == "Outer Ring Road" {
+             drawPolyLine(road: road)     
+            }
+        }
     }
     
     func loadMap() {
@@ -46,11 +53,11 @@ class ViewController: UIViewController {
                     // json is a dictionary
                     print(object)
                     print("its a dcitionary")
-                    let roads = Mapper<RoadInfo>().map(JSON: object)
+                    //roads = Mapper<RoadInfo>().map(JSON: object)
                     print(roads)
                 } else if let object = json as? [Any] {
                     // json is an array
-                    let roads = Mapper<RoadInfo>().mapArray(JSONObject: object)
+                    roads = Mapper<RoadInfo>().mapArray(JSONObject: object)
                     print(roads)
                 } else {
                     print("JSON is invalid")
@@ -61,6 +68,19 @@ class ViewController: UIViewController {
         } catch {
             print(error.localizedDescription)
         }
+    }
+    
+    func drawPolyLine(road: RoadInfo) {
+        let path = GMSMutablePath()
+
+        for coordinate in road.position {
+            path.addLatitude(coordinate[1], longitude: coordinate[0])
+        }
+        
+        let polyLine = GMSPolyline(path: path)
+        polyLine.strokeColor = UIColor.red
+        polyLine.strokeWidth = 4.0
+        polyLine.map = mapViewRoadAnalysis
     }
 }
 
