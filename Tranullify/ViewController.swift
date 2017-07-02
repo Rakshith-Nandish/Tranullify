@@ -22,12 +22,18 @@ class ViewController: UIViewController {
              drawPolyLine(road: road)     
             }
         }
+        
+        for road in roads {
+            if road.highway != "trunk" && road.highway != "trunk_link" && road.highway != "secondary" && road.highway != "primary_link" && road.highway != "tertiary" && road.highway != "footway" && road.name != "Outer Ring Road" {
+                drawPolyLineForAlternateRoutes(road: road)
+            }
+        }
     }
     
     func loadMap() {
         // Create a GMSCameraPosition that tells the map to display the
         // coordinate -33.86,151.20 at zoom level 6.
-        let camera = GMSCameraPosition.camera(withLatitude: 12.9260, longitude: 77.6762, zoom: 15.0)
+        let camera = GMSCameraPosition.camera(withLatitude: 12.9260, longitude: 77.6762, zoom: 16.0)
         mapViewRoadAnalysis.camera = camera
         
         // Creates a marker in the center of the map.
@@ -79,6 +85,18 @@ class ViewController: UIViewController {
         
         let polyLine = GMSPolyline(path: path)
         polyLine.strokeColor = UIColor.red
+        polyLine.strokeWidth = 4.0
+        polyLine.map = mapViewRoadAnalysis
+    }
+    
+    func drawPolyLineForAlternateRoutes(road: RoadInfo) {
+        let path = GMSMutablePath()
+        for coordinate in road.position {
+            path.addLatitude(coordinate[1], longitude: coordinate[0])
+        }
+        
+        let polyLine = GMSPolyline(path: path)
+        polyLine.strokeColor = UIColor.blue
         polyLine.strokeWidth = 4.0
         polyLine.map = mapViewRoadAnalysis
     }
